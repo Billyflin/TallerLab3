@@ -4,6 +4,7 @@ public class Sucursal {
     private String SucursalId;
     private String Region;
     static ArrayList<Camion> camiones= new ArrayList<>();
+
     public static void showCamiones(){
         for (Camion c:camiones
              ) {
@@ -18,11 +19,14 @@ public class Sucursal {
 
     }
     public static Camion obtenerCamion(){
-        for (Camion c:camiones
+        if (camiones.isEmpty()){
+            for (Camion c:camiones
              ) {
             camiones.indexOf(c)
         ;}
         int index= init.validar(camiones.size());
         return camiones.get(index);
+        }
+        return camiones.;
     }
 }

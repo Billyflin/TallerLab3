@@ -6,6 +6,8 @@ public class Carga {
     private final ArrayList<Pack> packs= new ArrayList<>();
     private int Packs;
     Scanner sc=new Scanner(System.in);
+
+
     public int getPacks() {
         return Packs;
     }
